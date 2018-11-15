@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @card_datum.user_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @card_datum.name %>
+</p>
+
+<p>
+  <strong>Manacost:</strong>
+  <%= @card_datum.manaCost %>
+</p>
+
+<p>
+  <strong>Layout:</strong>
+  <%= @card_datum.layout %>
+</p>
+
+<p>
+  <strong>Colors:</strong>
+  <%= @card_datum.colors %>
+</p>
+
+<p>
+  <strong>Supertypes:</strong>
+  <%= @card_datum.supertypes %>
+</p>
+
+<%= link_to 'Edit', edit_card_datum_path(@card_datum) %> |
+<%= link_to 'Back', card_data_path %>

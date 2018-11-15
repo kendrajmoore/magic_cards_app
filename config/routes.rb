@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :card_data
+  resources :card_infos
   devise_for :users
     get 'card/index'
     #get 'home/index'
