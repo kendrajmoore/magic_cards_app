@@ -1,24 +1,44 @@
-# README
+# Magic Cards App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is intended to help with their budget and/ or file for bankruptcy
 
-Things you may want to cover:
+**Magic Cards**  Is an application created with Node, Express, MongoDB, Mongoose, and D3.js.
 
-* Ruby version
+Official documentation: https://kendrajmoore.github.io/magic_cards_app/#/
 
-* System dependencies
+Official website: https://sell-car-kjm.herokuapp.com/
 
-* Configuration
+## Base URL
 
-* Database creation
+```
+https://sell-car-kjm.herokuapp.com/
+```
 
-* Database initialization
+The base url contains information about all available API's resources. All responses will return data in json.
 
-* How to run the test suite
+There is one available resource
 
-* Services (job queues, cache servers, search engines, etc.)
+-   Budget: CRUD a survey
 
-* Deployment instructions
+```
+https://sell-car-kjm.herokuapp.com/survey
+https://sell-car-kjm.herokuapp.com/survey/new
+https://sell-car-kjm.herokuapp.com/survey/:id/edit
+https://sell-car-kjm.herokuapp.com/survey/:id/delete
+```
 
-* ...
+## Installation
+
+```js
+$ npm install
+```
+
+## Run
+
+```js
+$ nodemon
+```
+
+## Project Team
+
+Created by Kendra Moore for Make School
