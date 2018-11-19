@@ -8,12 +8,6 @@ class CardDataController < ApplicationController
   # GET /card_data.json
   def index
     @card_data = CardDatum.all
-    require 'net/http'
-    require 'json'
-    @url = "https://api.magicthegathering.io/v1/cards"
-    @uri = URI(@url)
-    @response = Net::HTTP.get(@uri)
-    @cards = JSON.parse(@response)
   end
 
   # GET /card_data/1
