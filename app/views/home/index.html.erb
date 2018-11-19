@@ -1,3 +1,15 @@
 <h1>Magic Card App</h1>
 
-<%= @card_info %>
+<% @card_info["cards"] %>
+<% for x in @card_info["cards"] %>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+      <h5 class="card-title"><%= x["name"] %></h5>
+    <%= x["name"] %><br>
+    <%= x["manaCost"] %><br>
+    <%= x["layout"] %><br>
+    <%= x["colors"] %><br>
+    <%= x["supertypes"] %><br>
+<% end %>
+</div>
+</div>
