@@ -1,12 +1,19 @@
 class CardDataController < ApplicationController
   before_action :set_card_datum, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
+  before_action :correct_user, only: [:edit, :update, :destroy, :show]
 
 
   # GET /card_data
   # GET /card_data.json
   def index
     @card_data = CardDatum.all
+    require 'net/http'
+    require 'json'
+    @url = "https://api.magicthegathering.io/v1/cards"
+    @uri = URI(@url)
+    @response = Net::HTTP.get(@uri)
+    @cards = JSON.parse(@response)
   end
 
   # GET /card_data/1
@@ -72,5 +79,9 @@ class CardDataController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def card_datum_params
       params.require(:card_datum).permit(:user_id, :name, :manaCost, :layout, :colors, :supertypes)
+    end
+
+    def correct_user
+        @correct = current_user.card_datum.find_by(id: params[:id])
     end
 end
