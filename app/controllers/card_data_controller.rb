@@ -2,6 +2,7 @@ class CardDataController < ApplicationController
   before_action :set_card_datum, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
 
+
   # GET /card_data
   # GET /card_data.json
   def index

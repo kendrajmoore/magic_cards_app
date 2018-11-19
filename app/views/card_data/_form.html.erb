@@ -12,33 +12,32 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :user_id %>
-    <%= form.number_field :user_id, value: current_user.id %>
+    <%= form.number_field :user_id, value: current_user.id, type: "hidden" %>
   </div>
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :manaCost %>
-    <%= form.number_field :manaCost %>
+    <%= form.number_field :manaCost, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :layout %>
-    <%= form.text_field :layout %>
+    <%= form.text_field :layout, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :colors %>
-    <%= form.text_field :colors %>
+    <%= form.text_field :colors, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :supertypes %>
-    <%= form.text_field :supertypes %>
+    <%= form.text_field :supertypes, class: "form-control" %>
   </div>
 
   <div class="actions">
