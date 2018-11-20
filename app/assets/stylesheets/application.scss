@@ -1,2 +1,17 @@
 
 @import "bootstrap";
+
+h1 {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+body {
+    background-color: gray;
+}
+
+div.card-body {
+    padding-bottom: 10px;
+    width: 200px;
+    height: 600px;
+}
