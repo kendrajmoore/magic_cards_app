@@ -7,5 +7,6 @@ Rails.application.routes.draw do
     root 'home#index'
     get 'home/about'
     get 'home/search'
+    get 'home/show'
     post 'home/search' => 'home/search'
 end

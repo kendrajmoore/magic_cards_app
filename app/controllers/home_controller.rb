@@ -7,6 +7,9 @@ class HomeController < ApplicationController
   def about
   end
 
+  def show
+  end
+
   def search
     @name = params[:name]
     require 'net/http'

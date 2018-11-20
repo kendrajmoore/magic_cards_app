@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Card Data</h1>
+<h1>My Cards Table</h1>
 
 <table class="table table-striped table-bordered">
   <thead>
@@ -40,6 +40,32 @@
   </tbody>
 </table>
 
+
+
+<% @card_data.each do |card_datum| %>
+    <% if card_datum.user_id == current_user.id %>
+<div class="container">
+<div class="row">
+   <div class="col-sm">
+     <div class="card" style="width: 18rem;">
+       <img class="card-img-top" src="<%= card_datum.imageUrl %>" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><%= card_datum.name %></h5>
+            <p class="card-text"><%= card_datum.text %></p>
+            <p class="card-text"><%= card_datum.manaCost %></p>
+            <p class="card-text"><%= card_datum.layout %></p>
+            <p class="card-text"><%= card_datum.colors %></p>
+            <p class="card-text"><%= card_datum.rarity %></p>
+           <p class="card-text"><%= card_datum.power %></p>
+           <p class="card-text"><%= card_datum.toughness %></p>
+           </div>
+         </div>
+        </div>
+      <br>
+    <% end %>
+   </div>
+</div>
+<% end %>
 <br>
 
 <%= link_to 'New Card Datum', new_card_datum_path, class: "btn btn-primary" %>
