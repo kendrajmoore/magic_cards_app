@@ -1,23 +1,18 @@
-# README
+# Magic Cards App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is intended to help people quickly find information and photos on Magic Cards
 
-Things you may want to cover:
 
-* Ruby version
+**_Magic Cards_**  Is an application created with Ruby on Rails, Bootstrap, and the Magic IO API.
 
-* System dependencies
+Official Magic Cards App documentation: https://kendrajmoore.github.io/magic_cards_app/#/
 
-* Configuration
+Official Magic Card API website: https://docs.magicthegathering.io/
 
-* Database creation
 
-* Database initialization
+## Project Team
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
+Created by Kendra Moore for the term 2 Backend Web 1.3 at Make School
 
 * Deployment instructions
 
