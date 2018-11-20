@@ -36,10 +36,32 @@
   </div>
 
   <div class="field">
-    <%= form.label :supertypes %>
-    <%= form.text_field :supertypes, class: "form-control" %>
+    <%= form.label :rarity %>
+    <%= form.text_field :rarity, class: "form-control" %>
   </div>
 
+  <div class="field">
+    <%= form.label :text %>
+    <%= form.text_field :text, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :power %>
+    <%= form.text_field :power, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :toughness %>
+    <%= form.text_field :toughness, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :imageUrl %>
+    <%= form.text_field :imageUrl, class: "form-control" %>
+  </div>
+
+
+<br>
   <div class="actions">
     <%= form.submit %>
   </div>

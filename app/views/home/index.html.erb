@@ -1,15 +1,27 @@
+<br>
 <h1>Magic Card App</h1>
-
+<br>
 <% @card_info["cards"] %>
-<% for x in @card_info["cards"] %>
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-      <h5 class="card-title"><%= x["name"] %></h5>
-    <%= x["name"] %><br>
-    <%= x["manaCost"] %><br>
-    <%= x["layout"] %><br>
-    <%= x["colors"] %><br>
-    <%= x["supertypes"] %><br>
-<% end %>
-</div>
+<div class="container">
+<div class="row">
+  <% for x in @card_info["cards"] %>
+   <div class="col-sm">
+     <div class="card" style="width: 18rem;">
+       <img class="card-img-top" src="<%= x["imageUrl"] %>" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><%= x["name"] %></h5>
+            <p class="card-text"><%= x["text"] %></p>
+            <p class="card-text"><%=x["manaCost"] %></p>
+            <p class="card-text"><%= x["layout"] %></p>
+            <p class="card-text"><%= x["colors"] %></p>
+            <p class="card-text"><%= x["rarity"] %></p>
+           <p class="card-text"><%= x["power"] %></p>
+           <p class="card-text"><%= x["toughness"] %></p>
+           <a href="#" class="btn btn-primary">Go somewhere</a>
+           </div>
+         </div>
+        </div>
+      <br>
+    <% end %>
+   </div>
 </div>

@@ -26,9 +26,31 @@
 </p>
 
 <p>
-  <strong>Supertypes:</strong>
-  <%= @card_datum.supertypes %>
+  <strong>Rarity:</strong>
+  <%= @card_datum.rarity %>
 </p>
 
+<p>
+  <strong>Text:</strong>
+  <%= @card_datum.text %>
+</p>
+
+<p>
+  <strong>Power:</strong>
+  <%= @card_datum.power %>
+</p>
+
+<p>
+  <strong>Toughness:</strong>
+  <%= @card_datum.toughness %>
+</p>
+
+<p>
+  <strong>imageUrl :</strong>
+  <%= @card_datum.imageUrl %>
+</p>
+
+
+
 <%= link_to 'Edit', edit_card_datum_path(@card_datum) %> |
-<%= link_to 'Back', card_data_path %>
+<%= link_to 'Back', card_data_path %> | <%= link_to 'Destroy', card_datum_path(@card_datum), method: :delete, data: { confirm: 'Are you sure?' } %>

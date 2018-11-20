@@ -18,7 +18,11 @@ ActiveRecord::Schema.define(version: 2018_11_15_211621) do
     t.integer "manaCost"
     t.string "layout"
     t.string "colors"
-    t.string "supertypes"
+    t.string "rarity"
+    t.string "text"
+    t.string "power"
+    t.string "toughness"
+    t.string "imageUrl"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_card_data_on_user_id"
@@ -30,7 +34,6 @@ ActiveRecord::Schema.define(version: 2018_11_15_211621) do
     t.integer "manaCost"
     t.string "layout"
     t.string "colors"
-    t.string "type"
     t.string "supertypes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

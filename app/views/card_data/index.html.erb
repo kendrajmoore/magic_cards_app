@@ -10,7 +10,12 @@
       <th>Manacost</th>
       <th>Layout</th>
       <th>Colors</th>
-      <th>Supertypes</th>
+       <th>Rarity</th>
+       <th>Text</th>
+       <th>Power</th>
+       <th>Toughness</th>
+       <th>imageUrl</th>
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,13 +25,15 @@
         <% if card_datum.user_id == current_user.id %>
       <tr>
         <td><%= card_datum.user_id %></td>
-        <td><%= card_datum.name %></td>
+        <td><%= link_to card_datum.name,  card_datum %></td>
         <td><%= card_datum.manaCost %></td>
         <td><%= card_datum.layout %></td>
         <td><%= card_datum.colors %></td>
-        <td><%= card_datum.supertypes %></td>
-        <td><%= link_to 'Show', card_datum %></td>
-        <td><%= link_to 'Edit', edit_card_datum_path(card_datum) %></td>
+        <td><%= card_datum.rarity %></td>
+        <td><%= card_datum.text %></td>
+        <td><%= card_datum.power %></td>
+        <td><%= card_datum.toughness %></td>
+        <td><%= card_datum.imageUrl %></td>
         <td><%= link_to 'Destroy', card_datum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
       <% end %>
