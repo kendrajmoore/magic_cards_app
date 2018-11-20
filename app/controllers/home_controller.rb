@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   def index
     @card_info = CardDatum.get_api_info
+    @home = CardDatum.paginate(page: params[:page], per_page: 10)
   end
 
   def about
