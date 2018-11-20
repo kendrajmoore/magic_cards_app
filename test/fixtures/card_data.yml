@@ -6,12 +6,11 @@ one:
   manaCost: 1
   layout: MyString
   colors: MyString
-  supertypes: MyString
+
 
 two:
-  user_id: 1
-  name: MyString
+  user_id: 2
+  name: MyStringother
   manaCost: 1
-  layout: MyString
-  colors: MyString
-  supertypes: MyString
+  layout: MyStringother
+  colors: MyStringother
