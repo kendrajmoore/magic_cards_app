@@ -1,0 +1,27 @@
+<br>
+<h1>Search Results</h1>
+
+<h5>Search term: <%= @name %></h5>
+<% @search_cards["cards"] %>
+<div class="container">
+<div class="row">
+<% for x in @search_cards["cards"] %>
+<div class="col-sm">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="<%= x["imageUrl"] %>" alt src="https://images-na.ssl-images-amazon.com/images/I/51yRqvJKSdL.jpg">
+    <h5 class="card-title"><%= x["name"] %></h5>
+    <div class="card-body">
+      <p class="card-text"><%= x["text"] %></p>
+      <p class="card-text"><%=x["manaCost"] %></p>
+      <p class="card-text"><%= x["layout"] %></p>
+      <p class="card-text"><%= x["colors"] %></p>
+      <p class="card-text"><%= x["rarity"] %></p>
+     <p class="card-text"><%= x["power"] %></p>
+     <p class="card-text"><%= x["toughness"] %></p>
+     </div>
+    </div>
+    </div>
+    <br>
+    <% end %>
+    </div>
+</div>
