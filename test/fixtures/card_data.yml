@@ -14,3 +14,10 @@ two:
   manaCost: 1
   layout: MyStringother
   colors: MyStringother
+
+three:
+  user_id: 3
+  name: testtest
+  manaCost: 1
+  layout: testtest
+  colors: testtest

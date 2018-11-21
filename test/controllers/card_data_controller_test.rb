@@ -1,8 +1,12 @@
 require 'test_helper'
 
 class CardDataControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
+
   setup do
     @card_datum = card_data(:one)
+    @card_datum_two = card_data(:two)
+    @card_datum_three = card_data(:three)
   end
 
   test "should get index" do
@@ -17,7 +21,7 @@ class CardDataControllerTest < ActionDispatch::IntegrationTest
 
   test "should create card_datum" do
     assert_difference('CardDatum.count') do
-      post card_data_url, params: { card_datum: { colors: @card_datum.colors, layout: @card_datum.layout, manaCost: @card_datum.manaCost, name: @card_datum.name, supertypes: @card_datum.supertypes, user_id: @card_datum.user_id } }
+      post card_data_url, params: { card_datum: { colors: @card_datum_two.colors, layout: @card_datum_two.layout, manaCost: @card_datum_two.manaCost, name: @card_datum_two.name, user_id: @card_datum_two.user_id } }
     end
 
     assert_redirected_to card_datum_url(CardDatum.last)
@@ -34,7 +38,7 @@ class CardDataControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update card_datum" do
-    patch card_datum_url(@card_datum), params: { card_datum: { colors: @card_datum.colors, layout: @card_datum.layout, manaCost: @card_datum.manaCost, name: @card_datum.name, supertypes: @card_datum.supertypes, user_id: @card_datum.user_id } }
+    patch card_datum_url(@card_datum), params: { card_datum: { colors: @card_datum.colors, layout: @card_datum.layout, manaCost: @card_datum.manaCost, name: @card_datum.name, user_id: @card_datum.user_id } }
     assert_redirected_to card_datum_url(@card_datum)
   end
 
