@@ -6,6 +6,9 @@
 #
 michael:
   email: michael@example.com
+  encrypted_password: testtest
+
 #
-two:
+karen:
   email: test2@test.com
+  encrypted_password: testtest
