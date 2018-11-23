@@ -1,6 +1,15 @@
 class HomeController < ApplicationController
+require 'will_paginate/array'
+
   def index
-    @card_info = CardDatum.get_api_info.paginate(page: params[:page], per_page: 10)
+      require 'net/http'
+      require 'json'
+      @url = "https://api.magicthegathering.io/v1/cards"
+      @uri = URI(@url)
+      @response = Net::HTTP.get(@uri)
+      @cards = JSON.parse(@response)
+    # @home = @card_info
+    # .paginate(page: params[:page], per_page: 10)
   end
 
   def about

@@ -6,11 +6,6 @@ class CreateCardData < ActiveRecord::Migration[5.2]
       t.integer :manaCost
       t.string :layout
       t.string :colors
-      t.string :rarity
-      t.string :text
-      t.string :power
-      t.string :toughness
-      t.string :imageUrl
 
       t.timestamps
     end

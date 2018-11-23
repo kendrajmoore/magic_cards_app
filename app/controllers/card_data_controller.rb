@@ -13,6 +13,7 @@ class CardDataController < ApplicationController
   # GET /card_data/1
   # GET /card_data/1.json
   def show
+    @card_datum = CardDatum.find(params["id"])
   end
 
   # GET /card_data/new
@@ -22,6 +23,7 @@ class CardDataController < ApplicationController
 
   # GET /card_data/1/edit
   def edit
+    @card_datum = CardDatum.find(params["id"])
   end
 
   # POST /card_data
