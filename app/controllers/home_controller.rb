@@ -22,7 +22,7 @@ require 'will_paginate/array'
     @name = params[:name]
     require 'net/http'
     require 'json'
-    @search_url = "https://api.magicthegathering.io/v1/cards/?name= " + @name
+    @search_url = "https://api.magicthegathering.io/v1/cards/?name= " + @name.to_s
     @search_uri = URI(@search_url)
     @search_response = Net::HTTP.get(@search_uri)
     @search_cards = JSON.parse(@search_response)
