@@ -38,4 +38,4 @@ $ rails server
 
 ## Project Team
 
-Created by Kendra Moore for the term 1 intensive at Make School
+Created by Kendra Moore for Backend Web 1.3 at Make School
