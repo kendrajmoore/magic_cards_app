@@ -1,6 +1,6 @@
 
 @import "bootstrap";
-*{
+* {
     font-family: 'Inknut Antiqua', serif;
 }
 
@@ -33,7 +33,11 @@ body {
 }
 
 div.card-body {
-    padding-bottom: 10px;
     height: 500px;
     background-color: #544108;
+}
+
+.card-img-top {
+    padding-top: 50px;
+    background-color: #2E0854;   
 }
