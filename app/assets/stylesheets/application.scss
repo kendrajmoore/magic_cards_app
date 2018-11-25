@@ -1,17 +1,21 @@
 
 @import "bootstrap";
+*{
+    font-family: 'Inknut Antiqua', serif;
+}
 
 h1 {
     text-align: center;
     padding: 10px 0px 10px 0px;
+    color: #544108;
 }
 
 body {
-    background-color: gray;
+    background-color: #2E0854;
 }
 
 div.card-body {
     padding-bottom: 10px;
-    width: 200px;
     height: 500px;
+    background-color: #544108;
 }
