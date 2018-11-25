@@ -9,6 +9,8 @@ Official Magic Cards App documentation: https://kendrajmoore.github.io/magic_car
 
 Official Magic Card API website: https://docs.magicthegathering.io/
 
+Website: https://magic-cards-kjm.herokuapp.com/
+
 
 ## Getting started
 
