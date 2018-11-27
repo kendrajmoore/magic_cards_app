@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_22_020518) do
+ActiveRecord::Schema.define(version: 2018_11_26_014049) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,10 @@ ActiveRecord::Schema.define(version: 2018_11_22_020518) do
     t.string "colors"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "rarity"
+    t.integer "power"
+    t.string "toughness"
+    t.string "imageUr"
     t.index ["user_id"], name: "index_card_data_on_user_id"
   end
 

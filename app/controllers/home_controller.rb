@@ -4,7 +4,7 @@ require 'will_paginate/array'
   def index
       require 'net/http'
       require 'json'
-      @url = "https://api.magicthegathering.io/v1/cards"
+      @url = "https://api.magicthegathering.io/v1/cards?pageSize=20"
       @uri = URI(@url)
       @response = Net::HTTP.get(@uri)
       @cards = JSON.parse(@response)
