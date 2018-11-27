@@ -74,7 +74,7 @@ class CardDataController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def card_datum_params
-      params.require(:card_datum).permit(:user_id, :name, :manaCost, :layout, :colors, :supertypes)
+      params.require(:card_datum).permit(:user_id, :name, :manaCost, :layout, :colors, :rarity, :text, :power, :toughness)
     end
 
     def correct_user

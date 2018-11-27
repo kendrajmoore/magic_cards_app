@@ -29,7 +29,12 @@
         <td><%= card_datum.manaCost %></td>
         <td><%= card_datum.layout %></td>
         <td><%= card_datum.colors %></td>
-      </tr>
+        <td><%= card_datum.rarity %></td>
+        <td><%= card_datum.text %></td>
+        <td><%= card_datum.power %></td>
+        <td><%= card_datum.toughness %></td>
+
+       </tr>
       <% end %>
     <% end %>
   </tbody>
@@ -48,6 +53,10 @@
             <p class="card-text"><%= card_datum.manaCost %></p>
             <p class="card-text"><%= card_datum.layout %></p>
             <p class="card-text"><%= card_datum.colors %></p>
+            <p class="card-text"><%= card_datum.text %></p>
+            <p class="card-text"><%= card_datum.rarity %></p>
+            <p class="card-text"><%= card_datum.power %></p>
+            <p class="card-text"><%= card_datum.toughness %></p>
            </div>
          </div>
         </div>
