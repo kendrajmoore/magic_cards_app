@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_27_170813) do
+ActiveRecord::Schema.define(version: 2018_11_27_191210) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,12 +28,14 @@ ActiveRecord::Schema.define(version: 2018_11_27_170813) do
     t.string "toughness"
     t.string "imageUr"
     t.string "text"
+    t.string "imageUrl"
     t.index ["user_id"], name: "index_card_data_on_user_id"
   end
 
   create_table "cards", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "imageUrl"
   end
 
   create_table "tests", force: :cascade do |t|

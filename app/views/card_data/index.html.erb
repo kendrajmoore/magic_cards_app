@@ -33,6 +33,7 @@
         <td><%= card_datum.text %></td>
         <td><%= card_datum.power %></td>
         <td><%= card_datum.toughness %></td>
+        <td><%= card_datum.imageUrl %></td>
 
        </tr>
       <% end %>
@@ -48,6 +49,8 @@
 <div class="row">
    <div class="col-sm">
      <div class="card" style="width: 18rem;">
+
+         <img class="card-img-top" src="<%= card_datum.imageUrl %>" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title"><strong>Name:</strong><%= card_datum.name %></h5>
             <p class="card-text"><strong>manaCost:</strong><%= card_datum.manaCost %></p>
@@ -57,6 +60,7 @@
             <p class="card-text"><strong>Rarity:</strong><%= card_datum.rarity %></p>
             <p class="card-text"><strong>Power:</strong><%= card_datum.power %></p>
             <p class="card-text"><strong>Toughness:</strong><%= card_datum.toughness %></p>
+            <p class="card-text"><strong>ImageURL:</strong><%= card_datum.imageUrl %></p>
            </div>
          </div>
         </div>
