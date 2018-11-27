@@ -49,14 +49,14 @@
    <div class="col-sm">
      <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title"><%= card_datum.name %></h5>
-            <p class="card-text"><%= card_datum.manaCost %></p>
-            <p class="card-text"><%= card_datum.layout %></p>
-            <p class="card-text"><%= card_datum.colors %></p>
-            <p class="card-text"><%= card_datum.text %></p>
-            <p class="card-text"><%= card_datum.rarity %></p>
-            <p class="card-text"><%= card_datum.power %></p>
-            <p class="card-text"><%= card_datum.toughness %></p>
+            <h5 class="card-title"><strong>Name:</strong><%= card_datum.name %></h5>
+            <p class="card-text"><strong>manaCost:</strong><%= card_datum.manaCost %></p>
+            <p class="card-text"><strong>Layout:</strong><%= card_datum.layout %></p>
+            <p class="card-text"><strong>Colors:</strong><%= card_datum.colors %></p>
+            <p class="card-text"><strong>Text:</strong><%= card_datum.text %></p>
+            <p class="card-text"><strong>Rarity:</strong><%= card_datum.rarity %></p>
+            <p class="card-text"><strong>Power:</strong><%= card_datum.power %></p>
+            <p class="card-text"><strong>Toughness:</strong><%= card_datum.toughness %></p>
            </div>
          </div>
         </div>
@@ -67,4 +67,4 @@
 <% end %>
 <br>
 
-<%= link_to 'New Card', new_card_datum_path, class: "btn btn-primary" %>
+<%= link_to 'New Card', new_card_datum_path, class: "btn btn-danger" %>
