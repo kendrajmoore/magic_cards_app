@@ -5,11 +5,11 @@ app also allows users to search for new magic cards
 
 **_Magic Cards App_**  An application created with Ruby on Rails and the official Magic Card API.
 
-Official documentation: https://kendrajmoore.github.io/magic_cards_app/#/
+Official documentation: https://kendrajmoore.github.io/good-eats/
 
-Official Magic Card API website: https://docs.magicthegathering.io/
+Official Yelp API website: https://www.yelp.com/fusion
 
-Website: https://magic-cards-kjm.herokuapp.com/
+Website: https://good-eats-spd.herokuapp.com/
 
 ## Base URL
 
