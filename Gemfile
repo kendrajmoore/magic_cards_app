@@ -10,7 +10,7 @@ gem 'bootstrap-will_paginate', '~> 1.0'
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 gem 'sprockets-rails', '~> 3.1', '>= 3.1.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
-gem 'bootstrap', '~> 4.1', '>= 4.1.3'
+gem 'bootstrap', '~> 4.3', '>= 4.3.1'
 gem 'devise', '~> 4.2'
 gem 'dotenv-rails', :groups => [:development, :test]
 # Use sqlite3 as the database for Active Record
