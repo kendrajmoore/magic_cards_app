@@ -12,6 +12,12 @@ Official Magic Card API website: https://docs.magicthegathering.io/
 Website: https://magic-cards-kjm.herokuapp.com/
 
 
+## Screenshot
+
+![Product Name Screen Shot](https://i.ibb.co/rfmkL5K/Screen-Shot-2021-02-25-at-8-45-41-AM.png)
+
+I created this project for a class 
+
 ## Getting started
 
 To get started with the app, clone the repo and then install the needed gems:
